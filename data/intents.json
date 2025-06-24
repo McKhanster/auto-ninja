@@ -1,0 +1,92 @@
+[
+    {
+        "intent": "exit",
+        "examples": ["exit", "quit", "stop", "leave", "end session", "shut down", "terminate", "close"],
+        "parameters": {}
+    },
+    {
+        "intent": "use_speech",
+        "examples": ["use speech", "switch to voice", "talk mode", "voice input", "speech on", "enable voice", "start talking"],
+        "parameters": {}
+    },
+    {
+        "intent": "use_text",
+        "examples": ["use text", "switch to text", "type mode", "keyboard input", "text input", "write mode", "text on"],
+        "parameters": {}
+    },
+    {
+        "intent": "list_skills",
+        "examples": ["list skills", "show abilities", "what can you do", "view capabilities", "display skills", "list commands", "show what’s possible"],
+        "parameters": {}
+    },
+    {
+        "intent": "acquire_skill",
+        "examples": [
+            "acquire skill writing, Draft reports",
+            "learn skill analysis, Analyze data",
+            "add skill automation, Automate tasks",
+            "gain skill coding, Write code",
+            "acquire ability reporting, Generate reports",
+            "learn new skill planning"
+        ],
+        "parameters": {"name": "required", "description": "optional"}
+    },
+    {
+        "intent": "use_skill",
+        "examples": [
+            "use skill 47, draft report",
+            "run skill 38, analyze data",
+            "execute skill automation, streamline process",
+            "apply skill 47, generate chart",
+            "use ability 38, write summary",
+            "run task planning"
+        ],
+        "parameters": {"skill_id": "required", "task": "required", "parameters": "optional"}
+    },
+    {
+        "intent": "update_skill",
+        "examples": [
+            "update skill 47, New report logic",
+            "modify skill 38, Improved analysis",
+            "change skill 47 description",
+            "update ability 38, Better planning",
+            "revise skill automation, Faster tasks"
+        ],
+        "parameters": {"skill_id": "required", "description": "required"}
+    },
+    {
+        "intent": "delete_skill",
+        "examples": ["delete skill 47", "remove skill 38", "erase skill automation", "delete ability 47", "clear skill analysis", "drop skill planning"],
+        "parameters": {"skill_id": "required"}
+    },
+    {
+        "intent": "acquire_next",
+        "examples": ["acquire next", "learn next skill", "add next skill", "acquire next 3", "get next ability", "learn next 2 skills"],
+        "parameters": {"count": "optional"}
+    },
+    {
+        "intent": "script_generate",
+        "examples": ["generate code", "create script", "write program", "make code automation", "generate script analysis", "create program reporting"],
+        "parameters": {}
+    },
+    {
+        "intent": "script_execute",
+        "examples": ["run code automation.py", "execute script analysis.py", "start program reporting.py", "run script task.py", "execute code planning.py"],
+        "parameters": {"file_name": "required"}
+    },
+    {
+        "intent": "script_update",
+        "examples": ["update code analysis.py", "modify script automation.py", "revise program reporting.py", "change script task.py"],
+        "parameters": {"file_name": "required"}
+    },
+    {
+        "intent": "script_delete",
+        "examples": ["delete code analysis.py", "remove script automation.py", "erase program reporting.py", "drop script task.py"],
+        "parameters": {"file_name": "required"}
+    },
+    {
+        "intent": "other",
+        "examples": ["hello", "good morning", "what’s up", "help me", "how’s it going", "tell me about skills", "what time is it", "optimize my work"],
+        "parameters": {}
+    }
+]

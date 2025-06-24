@@ -1,0 +1,16 @@
+fastapi
+pydantic
+uvicorn
+python-dotenv
+transformers
+torch
+torchvision
+numpy
+scikit-learn
+qdrant-client
+openai-whisper
+gtts
+pyttsx3
+pyaudio
+pydub
+SpeechRecognition
